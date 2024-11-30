@@ -1,0 +1,12 @@
+.payment-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .payment-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  

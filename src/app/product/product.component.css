@@ -1,0 +1,93 @@
+/* Styles globaux pour la grille */
+mat-grid-list {
+    margin: 20px 0;
+  }
+  
+  mat-grid-tile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Aligner le contenu du grid en haut */
+    padding: 10px;
+  }
+  
+  /* Style pour chaque carte produit */
+  .product-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    overflow: hidden; /* S'assure que tout débordement d'image ou de texte est caché */
+  }
+  
+  /* Effet au survol de la carte */
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style pour l'image du produit */
+  .product-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Contenu de la carte */
+  mat-card-content {
+    flex: 1;
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+    overflow: hidden; /* Pour éviter le débordement du contenu */
+  }
+  
+  /* En-tête de la carte */
+  mat-card-header {
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  /* Style pour les titres de la carte */
+  mat-card-title {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  mat-card-subtitle {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Actions de la carte (boutons) */
+  mat-card-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-items: center;  /* Assurez-vous que les boutons sont alignés verticalement */
+  }
+  
+  /* Style pour les boutons */
+  mat-card-actions button {
+    font-size: 14px;
+    color: #3f51b5;
+    text-transform: none;
+    transition: background-color 0.3s ease;
+    padding: 5px 15px; /* Ajouter du padding pour rendre le bouton plus visible */
+  }
+  
+  /* Effet de survol des boutons */
+  mat-card-actions button:hover {
+    background-color: #f0f0f0;
+    color: #303f9f;
+  }
+  

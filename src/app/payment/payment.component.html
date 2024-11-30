@@ -1,0 +1,35 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Paiement de la commande</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="payment-details">
+        <h3>Total à payer : {{ totalAmount }}</h3>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Numéro de carte</mat-label>
+          <input matInput [(ngModel)]="paymentDetails.cardNumber" maxlength="16" placeholder="1234 5678 1234 5678" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Nom du titulaire</mat-label>
+          <input matInput [(ngModel)]="paymentDetails.cardHolder" placeholder="John Doe" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Date d'expiration</mat-label>
+          <input matInput [(ngModel)]="paymentDetails.expirationDate" placeholder="MM/AA" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>CVV</mat-label>
+          <input matInput [(ngModel)]="paymentDetails.cvv" maxlength="3" placeholder="123" />
+        </mat-form-field>
+      </div>
+  
+      <div class="payment-buttons">
+        <button mat-raised-button color="primary" (click)="processPayment()">Confirmer le paiement</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  
